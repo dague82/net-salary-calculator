@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(NetSalaryCalculatorApp());
 }
 
-class MyApp extends StatelessWidget {
+class NetSalaryCalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Net Salary Calculator',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Net Salary Calculator'),
-        ),
-        body: Center(
-          child: Text('Bienvenido a tu calculadora de salario'),
-        ),
+      title: 'Net Salary Calculator UK',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: HomeScreen(),
     );
   }
 }
